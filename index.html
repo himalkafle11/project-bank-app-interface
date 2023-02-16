@@ -17,23 +17,28 @@
   <body>
     <!-- TOP NAVIGATION -->
     <nav>
-      <p class="welcome">Log in to get started</p>
-      <img src="logo.png" alt="Logo" class="logo" />
-      <form class="login">
-        <input
+      <div style="display:flex; justify-content:space-between">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <img  src="logo.png" alt="Logo" class="logo" />
+          <p  class="welcome">Log in to get started</p>
+        </div>
+        <form class="login">
+          <input
           type="text"
           placeholder="user"
           class="login__input login__input--user"
-        />
-        
-        <input
+          />
+          
+          <input
           type="text"
           placeholder="PIN"
           maxlength="4"
           class="login__input login__input--pin"
-        />
-        <button class="login__btn">&rarr;</button>
-      </form>
+          />
+          <button class="login__btn">&rarr;</button>
+        </form>
+      </div>
+      <p style="margin-top: 1rem;">For demo, User:hk Pin:1111</p>
     </nav>
 
     <main class="app">
